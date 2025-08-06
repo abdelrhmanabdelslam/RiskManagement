@@ -15,6 +15,20 @@ function configureRoutes(routes: RoutesService) {
         order: 1,
         layout: eLayoutType.application,
       },
+      {
+        path: '/risk',
+        name: 'Risk Management',
+        iconClass: 'fas fa-exclamation-triangle',
+        order: 2,
+        layout: eLayoutType.application
+      },
+      {
+        path: '/risk/new',
+        name: 'Add New Risk',
+        parentName: 'Risk Management',
+        order: 1,
+        layout: eLayoutType.application
+      }
     ]);
   };
 }
